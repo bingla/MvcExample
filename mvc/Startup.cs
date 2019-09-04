@@ -22,6 +22,8 @@ namespace mvc
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            // Dependency Injection
+            // Adds services via .NET Cores default Dependency Injector
             services.AddSingleton<IUserService, UserService>();
         }
 
